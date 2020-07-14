@@ -1,0 +1,102 @@
+Session 1:
+Data types, variables and operators
+Exercise 1: Write a program in Java to implement the formula (Area = Height ×
+Width) to find the area of a rectangle. Where Height and Width are the rectangle’s
+height and width.
+Solution: 
+import java.util.Scanner;
+class AreaOfRectangle {
+   public static void main (String[] args)
+   {
+	   Scanner scanner = new Scanner(System.in);
+	   System.out.println("Enter the length of Rectangle:");
+	   double length = scanner.nextDouble();
+	   System.out.println("Enter the width of Rectangle:");
+	   double width = scanner.nextDouble();
+	   double area = length*width;
+	   System.out.println("Area of Rectangle is:"+area);
+   }
+}
+
+Exercise 2: Write a program in Java to find the result of following expression
+(Assume a = 10, b = 5)
+i) (a < < 2) + (b > > 2)
+ii) (a) | | (b > 0)
+iii) (a + b ∗100) / 10
+iv) a & b
+
+class expression
+{
+public static void main(String args[])
+{
+int a=10,b=5;
+System.out.println("(a<<2)+(b>>2): "+(a<<2)+(b>>2) );
+System.out.println("(a)||(b>0) : "+(a)||(b>0) );
+System.out.println("(a+b*100)/10 : "+(a+b*100)/10 );
+System.out.println("(a&b) : "+(a&b) );
+}
+}
+
+Exercise 3: Write a program in Java to explain the use of break and continue
+statements.
+Solution:
+public class BreakExample
+{
+   public static void main(String[] args)
+   {
+      for (int i = 1; i <= 10; i++)
+      {
+         if (i == 7)
+         {
+            break;    // terminates loop if i is 7
+         }
+
+         System.out.print(i + " ");
+      }
+   }
+}
+
+public class ContinueExample
+{
+   public static void main(String[] args)
+   {
+      for (int i = 1; i <= 10; i++)
+      {
+         if (i % 2 == 0)
+         {
+            continue;    // skips next statement if i is even
+         }
+
+         System.out.println(i + " ");
+      }
+   }
+}
+
+
+Exercise 4: Write a program in Java to find the average of marks you obtained in
+your 10+2 class.
+Solution:
+import java.util.Scanner;
+
+public class Totalof5subjects1 {
+	private static Scanner sc;
+	public static void main(String[] args) 
+	{
+		int english, chemistry, computers, physics, maths; 
+	    float total, Percentage, Average;
+		sc = new Scanner(System.in);
+		
+		System.out.print(" Please Enter the Five Subjects Marks : ");
+		english = sc.nextInt();	
+		chemistry = sc.nextInt();	
+		computers = sc.nextInt();	
+		physics = sc.nextInt();	
+		maths = sc.nextInt();	
+		
+		totalmarks = english + chemistry + computers + physics + maths;
+		Average = totalmarks / 5;
+	    
+	    System.out.println(" Total Marks =  " + totalmarks);
+	    System.out.println(" Average Marks =  " + Average);
+	}
+}
